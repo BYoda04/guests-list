@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body{
+  box-sizing: border-box;
   min-height: 100vh;
+  min-width: 98vw;
+  margin: 0;
+  padding: 5rem;
+  /* Created with https://www.css-gradient.com */
+  background: #e4ffff;
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+}
+
+.home-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.list-title{
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  border-bottom: 2px solid #000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.body-container{
+  min-width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.guest-container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  padding: .5rem;
+  padding-right: 1rem;
+}
+
+.title p{
+  margin-bottom: 0;
+}
+
+.escorts-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+}
+
+.escorts-container:last-child{
+  border-bottom: 0;
+}
+
+.bad{
+  color: red;
+}
+
+.good{
+  color: green;
+}
+
+.accordion{
+  --bs-accordion-border-radius: 1rem;
+  --bs-accordion-inner-border-radius: 1rem;
+  --bs-accordion-active-bg: #d8bfd8;
+  --bs-accordion-active-color: #000;
+  --bs-accordion-btn-focus-border-color: none;
 }
