@@ -6,11 +6,11 @@ const Home = () => {
         <div className='home-container'>
             <p className='list-title'>Lista de Invitados</p>
             <div className='body-container'>
-                <div>
+                <div className='body-list'>
                     <p className='good'>Asistentes</p>
                     <List route={'guests'} confirmation={true}/>
                 </div>
-                <div>
+                <div className='body-list'>
                     <p className='bad'>No Asistentes</p>
                     <List route={'guests'} confirmation={false}/>
                 </div>

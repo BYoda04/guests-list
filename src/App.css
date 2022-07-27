@@ -83,3 +83,14 @@ body{
   --bs-accordion-active-color: #000;
   --bs-accordion-btn-focus-border-color: none;
 }
+
+@media only screen and (max-width: 450px){
+  .body-container{
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .title{
+    gap: .8rem;
+  }
+}
